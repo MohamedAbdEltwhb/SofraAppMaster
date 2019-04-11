@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey200">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimension32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_logo_y"/>
+
+        <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+            android:id="@+id/cairoLightText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension5"
+            android:layout_marginStart="@dimen/dimension5"
+            android:drawablePadding="@dimen/dimension5"
+            android:text="@string/login_screen_title"
+            android:textColor="@color/colorGreyDark"
+            android:textSize="@dimen/text20" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/loginUserEditTextEmile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension45"
+        android:layout_marginEnd="@dimen/dimension16"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/dimension32"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="@dimen/dimension8"
+        android:paddingStart="@dimen/dimension8"
+        android:textDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/loginUserEditTextPassword"
+        android:layout_width="@dimen/dimension0"
+        android:layout_height="@dimen/dimension45"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:paddingEnd="@dimen/dimension8"
+        android:paddingStart="@dimen/dimension8"
+        android:textDirection="rtl"
+        app:layout_constraintEnd_toEndOf="@+id/loginUserEditTextEmile"
+        app:layout_constraintStart_toStartOf="@+id/loginUserEditTextEmile"
+        app:layout_constraintTop_toBottomOf="@+id/loginUserEditTextEmile" />
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/ButtonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension45"
+        android:layout_marginEnd="@dimen/dimension24"
+        android:layout_marginStart="@dimen/dimension24"
+        android:layout_marginTop="@dimen/dimension24"
+        android:background="@drawable/green_button"
+        android:gravity="center"
+        android:text="@string/log_in"
+        android:textSize="@dimen/text18"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginUserEditTextPassword" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonSignIn">
+
+        <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/text14" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension1"
+            android:background="@color/color_blue" />
+    </LinearLayout>
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/ButtonSignUp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimension45"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/yellow_button"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textSize="@dimen/text18"
+        android:textColor="@color/colorGreyDark"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonSignIn"
+        app:layout_constraintStart_toStartOf="@+id/ButtonSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutForgotPassword" />
+
+</android.support.constraint.ConstraintLayout>

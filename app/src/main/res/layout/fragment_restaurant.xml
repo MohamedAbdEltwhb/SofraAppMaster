@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension50"
+        android:background="@drawable/spinner_background"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/Spinner_Request_food_Activity"
+            android:layout_width="@dimen/dimension0"
+            android:layout_height="@dimen/dimension50"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <FrameLayout
+            android:layout_width="@dimen/dimension1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimension7"
+            android:layout_marginTop="@dimen/dimension7"
+            android:layout_weight="0"
+            android:background="@color/colorGrey400">
+
+        </FrameLayout>
+
+        <EditText
+            android:layout_width="@dimen/dimension0"
+            android:layout_height="@dimen/dimension50"
+            android:layout_weight="1"
+            android:hint="@string/searsh"
+            android:background="@drawable/spinner_background"
+            android:drawableLeft="@drawable/ic_search"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension1"
+        android:background="@color/colorGrey400"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView_Fragment_food_request"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+</android.support.constraint.ConstraintLayout>

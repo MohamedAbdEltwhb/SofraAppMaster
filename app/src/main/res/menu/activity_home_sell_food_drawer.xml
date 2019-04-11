@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sell_nav_home"
+            android:icon="@drawable/ic_home_logo"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/sell_nav_My_products"
+            android:icon="@drawable/ic_order_logo"
+            android:title="@string/My_products" />
+
+        <item
+            android:id="@+id/sell_nav_Applications"
+            android:icon="@drawable/ic_notifcation_logo"
+            android:title="@string/Applications" />
+
+        <item
+            android:id="@+id/sell_nav_Commission"
+            android:icon="@drawable/ic_calculator"
+            android:title="@string/Commission" />
+
+        <item
+            android:id="@+id/sell_nav_offer"
+            android:icon="@drawable/ic_offer_logo"
+            android:title="@string/offer" />
+
+        <item
+            android:id="@+id/sell_nav_about"
+            android:icon="@drawable/ic_about_logo"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/sel_nav_conditions"
+            android:icon="@drawable/ic_lience_logo"
+            android:title="@string/conditions" />
+
+        <item
+            android:id="@+id/sell_nav_shareApp"
+            android:icon="@drawable/ic_share_logo"
+            android:title="@string/shareApp" />
+
+        <item
+            android:id="@+id/sel_nav_connectWithUs"
+            android:icon="@drawable/ic_contuctus_logo"
+            android:title="@string/connectWithUs" />
+
+        <item
+            android:id="@+id/sell_nav_logout"
+            android:icon="@drawable/ic_logout_logo"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

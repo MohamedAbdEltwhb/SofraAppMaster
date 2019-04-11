@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/dimension8"
+    android:layout_marginStart="@dimen/dimension8"
+    android:layout_marginEnd="@dimen/dimension8"
+    android:background="@drawable/rounded_corner_white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimension5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0">
+
+            <ImageView
+                android:id="@+id/OrderImage"
+                android:layout_width="@dimen/dimension70"
+                android:layout_height="@dimen/dimension70"
+                android:layout_gravity="center"
+                android:background="@color/colorGrey300"
+                android:padding="@dimen/dimension5"
+                android:src="@drawable/image_loader" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:padding="@dimen/dimension5">
+
+            <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                android:id="@+id/OrderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimension3"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="@dimen/text18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension30"
+                android:orientation="horizontal">
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimension3"
+                    android:text="@string/Quantity_txt"
+                    android:textSize="@dimen/text12" />
+
+
+                <ImageButton
+                    android:id="@+id/OrderAddOne"
+                    android:layout_width="@dimen/dimension30"
+                    android:layout_height="@dimen/dimension30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dimension3"
+                    android:layout_marginStart="@dimen/dimension3"
+                    android:background="@drawable/green_button"
+                    android:padding="@dimen/dimension5"
+                    android:src="@drawable/ic_plus1" />
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:id="@+id/OrderQuantity"
+                    android:layout_width="@dimen/dimension80"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_corner_white"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/OrderSubOne"
+                    android:layout_width="@dimen/dimension30"
+                    android:layout_height="@dimen/dimension30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dimension3"
+                    android:layout_marginStart="@dimen/dimension3"
+                    android:background="@drawable/green_button"
+                    android:padding="@dimen/dimension5"
+                    android:src="@drawable/ic_sub" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/price_txt"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="@dimen/text10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:id="@+id/OrderPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    tools:text="السعر"
+                    android:paddingStart="@dimen/dimension2"
+                    android:paddingEnd="@dimen/dimension2"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text10" />
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingStart="@dimen/dimension2"
+                    android:paddingEnd="@dimen/dimension2"
+                    android:text="@string/ccc"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorGrey300"
+        android:gravity="end"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="الإجمالي : "
+            android:textSize="@dimen/text12"/>
+
+        <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+            android:id="@+id/OrderTotal"
+            android:layout_width="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimension3"
+            android:text=""
+            android:layout_marginEnd="@dimen/dimension16"
+            android:textColor="@color/colorGreyDark" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

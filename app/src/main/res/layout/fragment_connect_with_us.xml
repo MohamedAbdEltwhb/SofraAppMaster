@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimension16"
+    android:layout_marginEnd="@dimen/dimension16"
+    android:layout_marginStart="@dimen/dimension16"
+    android:layout_marginTop="@dimen/dimension16"
+    tools:context=".ui.fragment.nav.ConnectWithUsFragment">
+
+
+    <EditText
+        android:id="@+id/ConnectUsEditTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/hint_name"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/text12"
+        android:textSize="@dimen/text12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="محمد عبدالتواب نجيب" />
+
+    <EditText
+        android:id="@+id/ConnectUsEditTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension8"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/hint_mail"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/text12"
+        android:textSize="@dimen/text12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConnectUsEditTextName"
+        tools:text="محمد عبدالتواب نجيب" />
+
+    <EditText
+        android:id="@+id/ConnectUsEditTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension8"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/hint_phone"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/text12"
+        android:textSize="@dimen/text12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConnectUsEditTextEmail"
+        tools:text="محمد عبدالتواب نجيب" />
+
+    <EditText
+        android:id="@+id/ConnectUsEditTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension200"
+        android:layout_marginTop="@dimen/dimension8"
+        android:background="@drawable/rounded_corner_white"
+        android:gravity="start"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/text12"
+        android:textSize="@dimen/text12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConnectUsEditTextPhone" />
+
+
+    <RadioGroup
+        android:id="@+id/ConnectWithUsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:layout_marginStart="@dimen/dimension8"
+        android:layout_marginTop="@dimen/dimension8"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConnectUsEditTextContent">
+
+
+
+        <com.example.mm.sofraappmaster.ui.custom.radio_button_custom_font.RadioButtonCustomFont
+            android:id="@+id/RadioButtonComplaint"
+            android:layout_width="@dimen/dimension0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension8"
+            android:layout_marginTop="@dimen/dimension8"
+            android:layout_weight="1"
+            android:gravity=""
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dimension3"
+            android:text="@string/complaint"
+            android:textSize="@dimen/text12"
+            app:fontName="cairo_regular" />
+
+        <com.example.mm.sofraappmaster.ui.custom.radio_button_custom_font.RadioButtonCustomFont
+            android:id="@+id/RadioButtonSuggestion"
+            android:layout_width="@dimen/dimension0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension8"
+            android:layout_marginTop="@dimen/dimension8"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dimension3"
+            android:text="@string/suggestion"
+            android:textSize="@dimen/text12"
+            app:fontName="cairo_regular" />
+
+        <com.example.mm.sofraappmaster.ui.custom.radio_button_custom_font.RadioButtonCustomFont
+            android:id="@+id/RadioButtonInquiry"
+            android:layout_width="@dimen/dimension0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension8"
+            android:layout_marginTop="@dimen/dimension8"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dimension3"
+            android:text="@string/inquiry"
+            android:textSize="@dimen/text12"
+            app:fontName="cairo_regular" />
+    </RadioGroup>
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/ButtonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension8"
+        android:background="@drawable/green_button"
+        android:gravity="center"
+        android:padding="@dimen/dimension10"
+        android:text="@string/send"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConnectWithUsRadioGroup" />
+
+
+</android.support.constraint.ConstraintLayout>

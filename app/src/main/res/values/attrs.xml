@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fontName" format="enum">
+        <enum name="cairo_extra_light" value="1" />
+        <enum name="cairo_light" value="2" />
+        <enum name="cairo_regular" value="3" />
+    </attr>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragFromEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

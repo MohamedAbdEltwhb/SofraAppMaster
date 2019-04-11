@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dimension16"
+    android:paddingTop="@dimen/dimension16"
+    android:paddingBottom="@dimen/dimension16"
+    android:paddingEnd="@dimen/dimension16"
+    tools:context=".ui.fragment.restaurant.nav.AddNewProductsFragment">
+
+
+    <EditText
+        android:id="@+id/RestaurantProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/Product_name"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/dimension14"
+        android:textSize="@dimen/text14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/RestaurantProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension100"
+        android:gravity="start|top"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/descrbtion"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/dimension14"
+        android:textSize="@dimen/text14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RestaurantProductName" />
+
+
+    <EditText
+        android:id="@+id/RestaurantProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/price_txt"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/dimension14"
+        android:textSize="@dimen/text14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RestaurantProductDescription" />
+
+    <EditText
+        android:id="@+id/RestaurantProductPreparingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/order_time"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/dimension14"
+        android:textSize="@dimen/text14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RestaurantProductPrice" />
+
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/cairoRegularText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimension8"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:text="@string/restaurant_photo"
+        android:textColor="@color/colorGreyDark"
+        android:textSize="@dimen/text16"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_Product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_Product" />
+
+    <ImageView
+        android:id="@+id/imageView_Product"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:layout_marginStart="@dimen/dimension8"
+        android:layout_marginTop="@dimen/dimension8"
+        app:layout_constraintEnd_toStartOf="@+id/cairoRegularText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RestaurantProductPreparingTime"
+        app:srcCompat="@drawable/image_loader" />
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/RegisterAddProductButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension45"
+        android:background="@drawable/green_button"
+        android:gravity="center"
+        android:padding="@dimen/dimension12"
+        android:text="@string/add_button"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_Product" />
+
+</android.support.constraint.ConstraintLayout>

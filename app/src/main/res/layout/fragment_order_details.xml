@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.nav.restaurant.taps.tap_menu.order.OrderDetailsFragment">
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/cairoRegularText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:layout_marginStart="@dimen/dimension8"
+        android:layout_marginTop="@dimen/dimension8"
+        android:text="@string/AddNote"
+        android:textColor="@color/colorGreyDark"
+        android:textDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/OrderDetailsEditText_AddNote"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension120"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:layout_marginStart="@dimen/dimension8"
+        android:background="@drawable/rounded_corner_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cairoRegularText3" />
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/cairoRegularText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:layout_marginStart="@dimen/dimension8"
+        android:layout_marginTop="@dimen/dimension8"
+        android:text="عنوان التوصيل"
+        android:textColor="@color/colorGreyDark"
+        android:textSize="@dimen/text16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderDetailsEditText_AddNote" />
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/OrderDetailsDeliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:layout_marginStart="@dimen/dimension8"
+        android:layout_marginTop="@dimen/dimension4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cairoRegularText4" />
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/CairoRegularTextpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:layout_marginStart="@dimen/dimension8"
+        android:layout_marginTop="@dimen/dimension8"
+        android:text="الدفع"
+        android:textColor="@color/colorGreyDark"
+        android:textSize="@dimen/text16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderDetailsDeliveryAddress" />
+
+    <RadioGroup
+        android:id="@+id/OrderDetailsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimension8"
+        android:layout_marginStart="@dimen/dimension8"
+        android:layout_marginTop="@dimen/dimension8"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CairoRegularTextpay">
+
+
+
+        <com.example.mm.sofraappmaster.ui.custom.radio_button_custom_font.RadioButtonCustomFont
+            android:id="@+id/RadioButtonComplaint"
+            android:layout_width="@dimen/dimension0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension8"
+            android:layout_marginTop="@dimen/dimension8"
+            android:layout_weight="1"
+            android:gravity=""
+            android:buttonTint="@color/colorYellow"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dimension3"
+            android:text="نقدا عند الاستلام"
+            android:textSize="@dimen/text12"
+            app:fontName="cairo_regular" />
+
+        <com.example.mm.sofraappmaster.ui.custom.radio_button_custom_font.RadioButtonCustomFont
+            android:id="@+id/RadioButtonSuggestion"
+            android:layout_width="@dimen/dimension0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension8"
+            android:layout_marginTop="@dimen/dimension8"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorYellow"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dimension3"
+            android:text="شبكة عند الاستلام"
+            android:textSize="@dimen/text12"
+            app:fontName="cairo_regular" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension16"
+        android:orientation="vertical"
+        android:textDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderDetailsRadioGroup">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey200"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dimension8"
+            android:paddingEnd="@dimen/dimension8"
+            android:paddingStart="@dimen/dimension8"
+            android:paddingTop="@dimen/dimension8"
+            android:textDirection="rtl"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textDirection="rtl">
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ريال"
+                    android:textColor="@color/colorGreyDark"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/text16" />
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/dimension8"
+                    android:paddingStart="@dimen/dimension8"
+                    android:textColor="@color/colorGreyDark"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/text16"
+                    tools:text="150" />
+
+            </LinearLayout>
+
+            <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="الكجموع :"
+                android:textColor="@color/colorGreyDark"
+                android:textDirection="rtl"
+                android:textSize="@dimen/text16" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey200"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dimension8"
+            android:paddingEnd="@dimen/dimension8"
+            android:paddingStart="@dimen/dimension8"
+            android:paddingTop="@dimen/dimension8"
+            android:textDirection="rtl"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textDirection="rtl">
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ريال"
+                    android:textColor="@color/colorGreyDark"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/text16" />
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/dimension8"
+                    android:paddingStart="@dimen/dimension8"
+                    android:textColor="@color/colorGreyDark"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/text16"
+                    tools:text="150" />
+
+            </LinearLayout>
+
+            <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="رسوم التوصيل :"
+                android:textColor="@color/colorGreyDark"
+                android:textDirection="rtl"
+                android:textSize="@dimen/text16" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey300"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dimension8"
+            android:paddingEnd="@dimen/dimension8"
+            android:paddingStart="@dimen/dimension8"
+            android:paddingTop="@dimen/dimension8"
+            android:textDirection="rtl"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textDirection="rtl">
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ريال"
+                    android:textColor="@color/colorGreyDark"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/text16" />
+
+                <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/dimension8"
+                    android:paddingStart="@dimen/dimension8"
+                    android:textColor="@color/colorGreyDark"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/text16"
+                    tools:text="150" />
+
+            </LinearLayout>
+
+            <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="المبلغ الاجمالي :"
+                android:textColor="@color/colorGreyDark"
+                android:textDirection="rtl"
+                android:textSize="@dimen/text16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+        android:id="@+id/CompletePurchase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension45"
+        android:layout_marginEnd="@dimen/dimension16"
+        android:layout_marginStart="@dimen/dimension16"
+        android:layout_marginTop="@dimen/dimension24"
+        android:layout_weight="1"
+        android:background="@drawable/yellow_button"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:text="@string/CompletePurchase"
+        android:textColor="@color/colorGreyDark"
+        android:textSize="@dimen/text16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+</android.support.constraint.ConstraintLayout>

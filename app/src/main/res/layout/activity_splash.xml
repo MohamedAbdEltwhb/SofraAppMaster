@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splashBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/splashImageLogo"
+        android:layout_width="@dimen/dimension150"
+        android:layout_height="@dimen/dimension150"
+        android:layout_marginEnd="@dimen/dimension16"
+        android:layout_marginStart="@dimen/dimension16"
+        android:layout_marginTop="@dimen/dimension45"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoExtraLightText
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimension16"
+        android:layout_marginStart="@dimen/dimension16"
+        android:layout_marginTop="@dimen/dimension32"
+        android:text="@string/LogoText"
+        android:textSize="@dimen/text20"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splashImageLogo" />
+
+    <Button
+        android:id="@+id/splashBtnBuyFood"
+        android:layout_width="match_parent"
+        android:background="@drawable/yellow_button"
+        android:layout_height="@dimen/dimension45"
+        android:layout_marginTop="@dimen/dimension32"
+        android:layout_marginStart="@dimen/dimension24"
+        android:layout_marginEnd="@dimen/dimension24"
+        android:textStyle="bold"
+        android:text="@string/BuyFood"
+        android:textSize="@dimen/text16"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/splashBtnSellFood"
+        android:layout_width="@dimen/dimension0"
+        android:layout_height="@dimen/dimension45"
+        android:layout_marginTop="@dimen/dimension10"
+        android:background="@drawable/yellow_button"
+        android:text="@string/sellingFood"
+        android:textStyle="bold"
+        android:textSize="@dimen/text16"
+        app:layout_constraintEnd_toEndOf="@+id/splashBtnBuyFood"
+        app:layout_constraintStart_toStartOf="@+id/splashBtnBuyFood"
+        app:layout_constraintTop_toBottomOf="@+id/splashBtnBuyFood" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dimension150"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimension16"
+        android:layout_marginEnd="@dimen/dimension16"
+        android:layout_marginStart="@dimen/dimension16"
+        android:layout_marginTop="@dimen/dimension32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splashBtnSellFood">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/splashBtnTwitter"
+            android:layout_width="@dimen/dimension50"
+            android:layout_height="@dimen/dimension50"
+            android:layout_weight="1"
+            android:src="@drawable/ic_twitter"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_overlay="true"
+            app:civ_border_width="@dimen/dimension1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/splashBtnInstagrame"
+            android:layout_width="@dimen/dimension50"
+            android:layout_height="@dimen/dimension50"
+            android:layout_weight="1"
+            android:src="@drawable/ic_instagrame"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_overlay="true"
+            app:civ_border_width="@dimen/dimension1" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

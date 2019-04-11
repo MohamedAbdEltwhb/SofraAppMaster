@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.nav.restaurant.taps.TapRestaurantInformation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension5"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension5"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:padding="@dimen/dimension5"
+                    android:text="@string/state"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/restaurantInformationFragTvState"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/colorGrey400"
+                        android:textSize="@dimen/text14"
+                        android:textStyle="bold"
+                        tools:ignore="RtlHardcoded"
+                        tools:text="hhhhh" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        tools:ignore="RtlHardcoded">
+
+                        <Switch
+                            android:id="@+id/restaurantInformationFragTvStateSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimension3"
+                            android:textColor="@color/colorGrey400"
+                            android:textSize="@dimen/text14"
+                            android:textStyle="bold"
+                            tools:text="jjjj" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension2"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:layout_marginStart="@dimen/dimension5"
+                android:background="@color/colorGrey300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension5"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension5"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:padding="@dimen/dimension5"
+                    android:text="@string/city"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/restaurantInformationFragTvCity"
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/colorGrey400"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension2"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:layout_marginStart="@dimen/dimension5"
+                android:background="@color/colorGrey300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension5"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension5"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:padding="@dimen/dimension5"
+                    android:text="@string/street"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/restaurantInformationFragTvStreet"
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/colorGrey400"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension2"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:layout_marginStart="@dimen/dimension5"
+                android:background="@color/colorGrey300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension5"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension5"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:padding="@dimen/dimension5"
+                    android:text="@string/minimum_order"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/restaurantInformationFragTvMinimum"
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/colorGrey400"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension2"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:layout_marginStart="@dimen/dimension5"
+                android:background="@color/colorGrey300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension5"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension5"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:padding="@dimen/dimension5"
+                    android:text="@string/deliveryFee"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/restaurantInformationFragTvDelivery"
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/colorGrey400"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/restaurantInformationFragBtnSave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimension10"
+                android:background="@drawable/green_button"
+                android:text="@string/save_button"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

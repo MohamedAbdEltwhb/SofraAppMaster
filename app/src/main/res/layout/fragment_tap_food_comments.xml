@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.nav.restaurant.taps.TapFoodCommentsFragment">
+
+    <LinearLayout
+        android:id="@+id/CommentFragmentLinerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimension5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimension5"
+            android:text="@string/text_comment"
+            android:textColor="@color/colorGreyDark"
+            android:textSize="@dimen/text20"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/commentFragmentBtnAddReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimension10"
+            android:background="@color/colorYellow"
+            android:drawableRight="@drawable/ic_star"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dimension16"
+            android:paddingStart="@dimen/dimension16"
+            android:text="@string/button_add_comment"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commentFragmentRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/CommentFragmentLinerLayout"
+        android:layout_margin="@dimen/dimension5" />
+
+    <ProgressBar
+        android:id="@+id/TapComments_fragment_ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:visibility="gone" />
+
+</RelativeLayout>

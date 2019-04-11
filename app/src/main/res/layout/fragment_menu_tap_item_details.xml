@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.nav.restaurant.taps.tap_menu.MenuTapItemDetailsFragment">
+
+    <ImageView
+        android:id="@+id/itemFoodFgImage"
+        android:layout_width="@dimen/dimension300"
+        android:layout_height="@dimen/dimension200"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimension7"
+        android:src="@drawable/image_loader" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/itemFoodFgImage"
+        android:paddingBottom="@dimen/dimension24"
+        android:layout_marginStart="@dimen/dimension8"
+        android:layout_marginEnd="@dimen/dimension8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimension3"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemFoodFgTvTittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimension3"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/itemFoodFgTvDec"
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension3"
+                    android:layout_weight="3"
+                    android:padding="@dimen/dimension3"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/text18" />
+
+                <TextView
+                    android:id="@+id/itemFoodFgTvPrice"
+                    android:layout_width="@dimen/dimension0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension3"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dimension5"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension1"
+                android:layout_marginTop="@dimen/dimension5"
+                android:layout_marginBottom="@dimen/dimension5"
+                android:background="@color/colorGrey300" />
+
+            <TextView
+                android:id="@+id/itemFoodFgTvPreparingTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/dimension3"
+                android:layout_weight="3"
+                android:padding="@dimen/dimension3"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension1"
+                android:layout_marginTop="@dimen/dimension5"
+                android:layout_marginBottom="@dimen/dimension5"
+                android:background="@color/colorGrey300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension3"
+                    android:padding="@dimen/dimension3"
+                    android:text="@string/order_"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/itemFoodFgEtSpecial"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension80"
+                    android:background="@drawable/rounded_corner_white"
+                    android:gravity="top|start"
+                    android:layoutDirection="rtl" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension3"
+                    android:padding="@dimen/dimension3"
+                    android:text="@string/spisonialOrder"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/itemFoodFgEtAddOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimension3"
+                        android:background="@drawable/green_button"
+                        android:padding="@dimen/dimension5"
+                        android:src="@drawable/ic_plus1" />
+
+                    <TextView
+                        android:id="@+id/itemFoodFgEtQuantity"
+                        android:layout_width="@dimen/dimension200"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dimension3"
+                        android:background="@drawable/rounded_corner_white"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/itemFoodFgSubOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimension3"
+                        android:background="@drawable/green_button"
+                        android:padding="@dimen/dimension5"
+                        android:src="@drawable/ic_sub" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/itemFoodFgBtnAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/dimension7"
+                android:background="@drawable/yellow_button"
+                android:layoutDirection="ltr">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dimension5"
+                    android:drawableEnd="@drawable/ic_cart_logo"
+                    android:drawablePadding="@dimen/dimension3"
+                    android:gravity="start|center"
+                    android:padding="@dimen/dimension10"
+                    android:text="@string/addToCart"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

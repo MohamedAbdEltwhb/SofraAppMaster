@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimension16"
+    android:layout_marginEnd="@dimen/dimension16"
+    android:layout_marginStart="@dimen/dimension16"
+    android:layout_marginTop="@dimen/dimension16"
+    tools:context=".ui.fragment.user.restaurant.RegisterRestaurantFragment">
+
+    <FrameLayout
+        android:id="@+id/RegisterRestaurantInclude"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/register_restaurant" />
+    </FrameLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/RegisterRestaurantNestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Register_restaurant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/hint_restaurant_name"
+                android:layoutDirection="rtl"
+                android:padding="@dimen/dimension14"
+                android:textSize="@dimen/text14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/Register_restaurant_Spinner_City"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension45"
+                android:layout_marginTop="8dp"
+                android:spinnerMode="dropdown"
+                android:overlapAnchor="false"
+                android:drawSelectorOnTop="false"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_white"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Register_restaurant_name"
+                tools:targetApi="lollipop" />
+
+            <Spinner
+                android:id="@+id/Register_restaurant_Spinner_regions"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension45"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_white"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Register_restaurant_Spinner_City" />
+
+            <EditText
+                android:id="@+id/Register_restaurant_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="@dimen/dimension8"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/hint_restaurant_Email"
+                android:layoutDirection="rtl"
+                android:padding="@dimen/dimension14"
+                android:textSize="@dimen/text14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Register_restaurant_Spinner_regions" />
+
+            <EditText
+                android:id="@+id/Register_restaurant_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/hint_restaurant_Password"
+                android:layoutDirection="rtl"
+                android:padding="@dimen/dimension14"
+                android:textSize="@dimen/text14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Register_restaurant_Email" />
+
+            <EditText
+                android:id="@+id/Register_restaurant_RePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension8"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/hint_restaurant_RePassword"
+                android:layoutDirection="rtl"
+                android:padding="@dimen/dimension14"
+                android:textSize="@dimen/text14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Register_restaurant_Password" />
+
+
+            <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+                android:id="@+id/Register_restaurant_Continue_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension45"
+                android:background="@drawable/green_button"
+                android:gravity="center"
+                android:padding="@dimen/dimension12"
+                android:text="@string/continue_button"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Register_restaurant_RePassword" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.nav.restaurant.RestaurantDetailsFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension120"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/dimension3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimension0"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/restaurantCardDetailsImage"
+                    android:layout_width="@dimen/dimension100"
+                    android:layout_height="@dimen/dimension100"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimension3"
+                    app:srcCompat="@drawable/image_loader" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimension0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/restaurantCardDetailsTvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension0"
+                    android:layout_margin="@dimen/dimension3"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/restaurantName"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/restaurantCardDetailsTvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension0"
+                    android:layout_margin="@dimen/dimension3"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:text="@string/category"
+                    android:textSize="@dimen/text12"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/restaurantCardDetailsRatingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension3"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:theme="@style/RatingBar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/restaurantCardDetailsTvSates"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension0"
+                    android:layout_margin="@dimen/dimension3"
+                    android:layout_weight="2"
+                    android:drawablePadding="@dimen/dimension2"
+                    android:drawableStart="@drawable/ic_true"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimension2"
+                    android:text="@string/open"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/restaurantCardDetailsTvMin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension0"
+                    android:layout_margin="@dimen/dimension3"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/minimum"
+                    android:textSize="@dimen/text10" />
+
+                <TextView
+                    android:id="@+id/restaurantCardDetailsTvDeliveryFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension0"
+                    android:layout_margin="@dimen/dimension3"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/deliveryFee"
+                    android:textSize="@dimen/text10" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewGeneral">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/Home_Fragment_TabLayout_tabs"
+                style="@style/AppTabLayout"
+                app:tabBackground="@color/colorGrey200"
+                android:fadeScrollbars="false"
+                android:layoutDirection="rtl"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/Home_Fragment_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>

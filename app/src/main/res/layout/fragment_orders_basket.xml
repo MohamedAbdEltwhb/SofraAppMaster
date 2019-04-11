@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.nav.restaurant.taps.tap_menu.order.OrdersBasketFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/OrdersBasketRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorGrey300"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimension5"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:paddingEnd="@dimen/dimension3"
+            android:paddingStart="@dimen/dimension16"
+            android:text="@string/tootle"
+            android:textColor="@color/colorGrey400"
+            android:textSize="@dimen/text16" />
+
+        <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+            android:id="@+id/OrderTotalPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layoutDirection="rtl"
+            android:paddingEnd="@dimen/dimension16"
+            android:paddingStart="@dimen/dimension3"
+            android:textColor="@color/colorGrey400"
+            android:textSize="@dimen/text16"
+            tools:text="50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+            android:id="@+id/requestOrder"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimension45"
+            android:layout_marginEnd="@dimen/dimension8"
+            android:layout_weight="1"
+            android:background="@drawable/green_button"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="@string/requestOrder"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text16" />
+
+        <com.example.mm.sofraappmaster.ui.custom.custom_fonts.CairoRegularText
+            android:id="@+id/addMore"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimension45"
+            android:layout_marginStart="@dimen/dimension8"
+            android:layout_weight="1"
+            android:background="@drawable/yellow_button"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="@string/addMore"
+            android:textColor="@color/colorGreyDark"
+            android:textSize="@dimen/text16" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

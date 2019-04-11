@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">SofraAppMaster</string>
+
+    <string name="cairo_extra_light">cairo_extra_light</string>
+    <string name="cairo_light">cairo_light</string>
+    <string name="cairo_regular">cairo_regular</string>
+
+    <string name="LogoText">التطبيق الاول لبيع وطلب الطعام</string>
+    <string name="BuyFood">طلب طعام</string>
+    <string name="sellingFood">بيع طعام</string>
+
+
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="order">طلباتي</string>
+    <string name="notification">التنبيهات</string>
+    <string name="offer">عروض</string>
+    <string name="about">عن التطبيق</string>
+    <string name="conditions">الشروط والاحكام</string>
+    <string name="shareApp">شارك التطبيق</string>
+    <string name="connectWithUs">تواصل معنا</string>
+    <string name="logout">تسجيل خروج</string>
+
+    <string name="welcome">مرحبا بك...</string>
+    <string name="name">تفضل بتسجيل الدجول</string>
+
+    <string name="restaurantName">اسم المطعم</string>
+    <string name="category">التصنيفات</string>
+    <string name="open">مفتوح</string>
+    <string name="minimum">الحد الادني للطلب</string>
+    <string name="deliveryFee">رسوم التوصيل</string>
+    <string name="request_fragment_tool_bar_title">طلب طعام</string>
+
+    <!-- Taps Title -->
+    <string name="foods_menu">قائمة الطعام</string>
+    <string name="comment_tap">التعليقات والتقييم</string>
+    <string name="information_tap">معلومات المجر</string>
+
+    <string name="food_request_fragment_tool_bar_title">طلب طعام</string>
+
+
+    <string name="price">السعر :</string>
+    <string name="price_txt">السعر</string>
+    <string name="spisonialOrder">الكمية</string>
+    <string name="order_">طلب خاص</string>
+    <string name="addToCart">اضف الي السلة</string>
+    <string name="preparingTime">مدة التحضير: </string>
+
+    <string name="values_app">قيم المطعم</string>
+    <string name="text_comment">يسعدنا مشاركتك بتقييم او تعليق</string>
+    <string name="button_add_comment">أضف تقييم او تعليق</string>
+    <string name="add_comment_editText">أضف تعليق هنا</string>
+    <string name="add_comment_tv">أضف تعليق</string>
+    <string name="add_button">اضف</string>
+
+    <string name="tap_current_orders">طلبات حالية</string>
+    <string name="tap_completed_orders">طلبات سابقة</string>
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_screen_title">تفضل بتسجيل الدخول</string>
+    <string name="hint_email">البريد الإلكتروني</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="forget_password">نسيت كلمة المرور؟</string>
+    <string name="sign_up">إنشاء حساب جديد</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="searsh">البحث ...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Commission">العمولة</string>
+    <string name="Applications">الطلبات المقدمة</string>
+    <string name="My_products">منتجاتي</string>
+    <string name="save_button">حفظ</string>
+    <string name="minimum_order">الحد الأدنى</string>
+    <string name="street">الحي</string>
+    <string name="city">المدينة</string>
+    <string name="state">الحالة</string>
+    <string name="total">الإجمالي :</string>
+    <string name="delivery">التوصيل :</string>
+    <string name="r_name">الإسم</string>
+    <string name="order_number">رقم الطلب : </string>
+    <string name="hint_mail">البريد الإلكتروني ...</string>
+    <string name="hint_name">الإسم كاملاً ...</string>
+    <string name="hint_phone">الجوال ...</string>
+    <string name="complaint">شكوي</string>
+    <string name="suggestion">اقتراح</string>
+    <string name="inquiry">استعلام</string>
+    <string name="send">إرسال</string>
+    <string name="new_offers">جديد العروض</string>
+    <string name="hint_restaurant_name">أسم المطعم</string>
+    <string name="hint_restaurant_Email">البريد الإلكتروني</string>
+    <string name="hint_restaurant_Password">كلمة المرور</string>
+    <string name="hint_restaurant_RePassword">اعادة كلمة المرور</string>
+    <string name="continue_button">متابعة</string>
+    <string name="sign_up_text">تسجيل</string>
+    <string name="MinimumOrder">الحد الأدنى للطلب</string>
+    <string name="DeliveryCost">رسوم التوصيل</string>
+    <string name="DeliveryData">بيانات التوصيل</string>
+    <string name="WatsApp">الواتس آب</string>
+    <string name="restaurant_photo">صورة المتجر</string>
+    <string name="create_new_account">انشاء حساب جديد</string>
+    <string name="OrdersBasket">سلة الطلبات</string>
+    <string name="Quantity_txt">الكمية</string>
+    <string name="ccc">ريال</string>
+    <string name="tootle">المجموع الكلي :</string>
+    <string name="addMore">اضافت المزيد</string>
+    <string name="requestOrder">تنفيذ الطلب</string>
+    <string name="ForgotPasswordTitle">نسيت كلمة المرور</string>
+    <string name="inpotE">برجاء ادخال بريدك الإلكتروني</string>
+    <string name="RegisterClient_Address">وصف السكن</string>
+    <string name="AddNote">اضافة ملاحظات</string>
+    <string name="CompletePurchase">اتمام الشراء</string>
+    <string name="UpdateText">تعديل</string>
+    <string name="my_profile">الملف الشخصي</string>
+    <string name="Edit">تعديل</string>
+    <string name="Delete">حذف</string>
+    <string name="offer_name">اسم العرض</string>
+    <string name="descrbtion">وصف مختصر</string>
+    <string name="Product_name">اسم المنتخ</string>
+    <string name="order_time">مدة تجهيز الطلب</string>
+
+
+</resources>
